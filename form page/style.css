@@ -1,0 +1,17 @@
+*{
+    background-color: #0a1c27;
+}
+
+.container{
+    color: white;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form{
+    background-color: transparent;
+     
+}

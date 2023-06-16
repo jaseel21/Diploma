@@ -1,0 +1,102 @@
+
+.unni{
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    text-align: center;
+}
+body{
+    background-color:  #0a1c27;
+    background-image: url(./img/img2-01-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:1400px;
+    width: auto;
+    height: 1000px;
+}
+
+.search-div{
+    width: auto;
+    height: 80vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.search-div input{
+    background-color: white;
+    border-radius: 50px;
+    height: 5vh;
+    outline: none;
+    border: none;
+}
+.login-btn{
+    display:none;
+    
+}
+/* Search bar */
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 20px auto;
+  }
+
+  .search-bar input[type="text"] {
+    flex-grow: 1;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 16px;
+  }
+
+  .search-bar button[type="submit"] {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .search-bar button[type="submit"]:focus,
+  .search-bar button[type="submit"]:active {
+    outline: none;
+    box-shadow: none;
+  }
+  .search-bar button i{
+    color: white;
+  }
+
+/* Responsive Code */
+
+@media (max-width: 768px) {
+    body {
+      background-size: 700px;
+      height:750px;
+      background-position:center;
+    }
+    .unni{
+        align-items: start;
+        justify-content: start;
+        background-color: transparent;
+        text-align: start;
+    }
+    .search-div{
+        width: auto;
+        height: 70vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    .search-div input{
+        background-color: white;
+        border-radius: 50px;
+        height: 5vh;
+        width: 40vh;
+        outline: none;
+        border: none;
+    }
+  }
+
