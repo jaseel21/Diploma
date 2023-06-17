@@ -39,7 +39,7 @@ a{
     border-radius: 50%;
     top: 60%;
     left: 30%;
-    animation: float 2s infinite ease-in-out;
+    animation:  2s infinite ease-in-out;
 }
 .circle-2{
     position: absolute;
@@ -60,7 +60,7 @@ a{
     margin-bottom: 5px;
 }
 .card h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .card .text1{
     font-weight: 300;
@@ -79,9 +79,6 @@ a{
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
-
-
-
 .card .tags a i.fa-facebook {
     color: #3b5998;
 }
