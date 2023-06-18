@@ -13,7 +13,10 @@ body{
     width: auto;
     height:100vh;
 }
-
+.img-container{
+  margin-bottom: 35vh;
+  position: absolute;
+}
 .search-div{
     width: auto;
     height: 80vh;
@@ -30,11 +33,9 @@ body{
     border-radius: 50px;
     height: 5vh;
     outline: none;
+    margin-top: 10vh;
 }
-.login-btn{
-    display:none;
-    
-}
+
 /* Search bar */
 
 .search-bar {
@@ -61,6 +62,7 @@ body{
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+    margin-top: 10vh;
   }
 
   .search-bar button[type="submit"]:focus,
@@ -74,17 +76,26 @@ body{
 
 /* Responsive Code */
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     body {
       background-size:cover;
       height:750px;
       background-position:center;
     }
-    .unni{
-        align-items: start;
-        justify-content: start;
-        background-color: transparent;
-        text-align: start;
+    .img-container img{
+      width: 50vh;
+    }
+    .login-btn{
+      display: none;
+    }
+    .navbar-toggler{
+      display: flex;
+      flex: 1;
+      justify-content: end;
+      border: none;
+    }
+    .navbar-toggler:focus{
+      outline: none;
     }
     .search-div{
         width: auto;
@@ -92,6 +103,7 @@ body{
         align-items: center;
         display: flex;
         justify-content: center;
+    }
     .search-div input{
         background-color: white;
         border-radius: 50px;
@@ -101,4 +113,31 @@ body{
         border: none;
     }
   }
-
+  @media (max-width:500px){
+    .img-container img{
+      width: 35vh;
+    }
+    body {
+      background-size:cover;
+      height:750px;
+      background-position:center;
+    }
+    .login-btn{
+      display: block;
+    }
+    .search-div{
+        width: auto;
+        height: 70vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .search-div input{
+        background-color: white;
+        border-radius: 50px;
+        height: 5vh;
+        width: 40vh;
+        outline: none;
+        border: none;
+    }
+  }

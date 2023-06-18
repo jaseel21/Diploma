@@ -1,21 +1,46 @@
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-</style>
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins',sana-serif;
+.circle-1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(-45deg, #753a88, #cc2b5e);
+    border-radius: 50%;
+    top: 60%;
+    left: 30%;
+    animation: float 2s infinite ease-in-out;
 }
-body{
-    color: black;
-    background-image: url(./img/img1.jpg);
+.circle-2{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(-45deg, #2193b0,#6dd5ed);
+    top: 5%;
+    left: 65%;
+    border-radius: 2%;
+    animation: float 2s 1s infinite ease-in-out;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateY(-20);
+    }
+}
+
+/*_____________________*/
+body {
+    background-image: url(../img/img1.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 }
+
+/* HEAD LINE */
 .headLine{
-    padding-top: 5vh;
-    color: rgb(0, 0, 0);
+    padding-top: 6vh;
     display: flex;
     justify-content: center;
 }
@@ -23,35 +48,58 @@ body{
     padding-top:5vh;
     padding-bottom: 2vh;
 }
-.img-container{
-    padding: 30px;
+.title p{
+    font-size: larger;
+    font-size: 60px;
 }
-.img{
-    width: 30vh;
-    background-color:transparent;
+
+/* CARD ALAIGHMENT */
+.custom-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .form{
     padding-bottom: 10vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     
+} 
+
+
+/* CARD */
+.form-div{
+    width: 100vh;
+    height: 60vh;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
 }
+.form-left{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+.form-right{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+/* ____________________ */
+
 .form-group label{
     color: black;
-    
 }
-.form-group input{
-    border: solid;
-    background-color:transparent;
-    border-color: black;
-    border-width: 1.5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-.form-group select{
-    border: solid;
-    background-color:transparent;
-    border-color: black;
-    border-width: 1.5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
+.form-group input,
+.form-group select,
 .form-group textarea{
     border: solid;
     background-color:transparent;
@@ -59,14 +107,8 @@ body{
     border-width: 1.5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.container-fluid{
-    padding-top: 0;
-    color: white;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.form-group input:focus{
+    background-color: transparent;
 }
 .form-select option{
     color: rgb(0, 0, 0);
@@ -78,18 +120,32 @@ form div{
       margin-left: auto;
       margin-right: auto;
 }
+.btn{
+    width: 100%;
+    margin-top: 8px;
 
-@media (max-width: 768px) {
-    .custom-container {
-      max-width: 90%; /* Set the desired width for small screens */
-      
+}
+@media (max-width: 1000px) {
+
+}
+@media (max-width: 500px) {
+    .form-div{
+        width: 500vh;
+        height: 100vh;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(20px);
+        border-radius: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        border-left: 1px solid rgba(255, 255, 255, 0.4);
     }
-    .form input{
-        width: 45vh;
-        
-        
+    .form-left{
+        width: 50%;
+        padding: 20px;
     }
-    .img{
-        width: 30vh;
+    .form-right{
+        width: 50%;
+        padding: 20px;
     }
   }

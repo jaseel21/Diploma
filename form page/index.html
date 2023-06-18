@@ -11,14 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="circle-1"></div>
+  <div class="circle-2"></div>
     <div class="row">
         <div class="headLine">
             <div class="title">
-                <h1 style="font-weight: bold; color: rgb(0, 0, 0); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Student Port</h1>
+                <p><b>STUDENT PORT</b></p>
             </div>
-            <!-- <div class="img-container ">
-                <img class="img" src="https://th.bing.com/th/id/OIP.0Rz6oxwLlnG1jrBs-2TkQwHaHa?pid=ImgDet&rs=1">
-            </div> -->
             
         </div>
         <div class="container-fluid custom-container">
@@ -26,73 +25,79 @@
             <div class="form  col-md-5 ">
                 <div>
                     <form> 
-                        <div class="form-group">
-                            <label for="formGroupExampleInput">Student name</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput">
-                          </div>
-                          <div class="form-group">
-                            <label for="formGroupExampleInput">Father name</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput">
-                          </div>
-                          <div class="form-group">
-                            <label for="formGroupExampleInput">Register number</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" >
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Address</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputPassword1">Date of birth</label>
-                            <input type="date" class="form-control" id="exampleInputPassword1">
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputPassword1">Phone number</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1">
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputPassword1">Whatsapp number</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1">
-                          </div>
-                          <div class="form-group">
-                            <label for="inputGroupSelect02">Year</label>
-                            <select class="form-select" id="inputGroupSelect02">
-                              <option selected>Choose...</option>
-                              <option value="1">1st Year</option>
-                              <option value="2">2nd Year</option>
-                              <option value="3">3rd Year</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label for="inputGroupSelect02">Text book</label>
-                            <select class="form-select" id="inputGroupSelect02">
-                              <option selected>Not received</option>
-                              <option value="1">Received</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label for="inputGroupSelect02">Certificate</label>
-                            <select class="form-select" id="inputGroupSelect02">
-                              <option selected>Not received</option>
-                              <option value="1">Received</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label for="inputGroupSelect02">Exam</label>
-                            <select class="form-select" id="inputGroupSelect02">
-                              <option selected>Not Attented</option>
-                              <option value="1">Attented</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                            <label for="inputGroupSelect02">Have we contacted you ?</label>
-                            <select class="form-select" id="inputGroupSelect02">
-                              <option selected>No</option>
-                              <option value="1">Yes</option>
-                            </select>
+                        <div class="form-div">
+                          <div class="form-left">
+                            <div class="form-group">
+                              <label for="formGroupExampleInput">Student name</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput" required="required">
+                            </div>
+                            <div class="form-group">
+                              <label for="formGroupExampleInput">Father name</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput" required="required">
+                            </div>
+                            <div class="form-group">
+                              <label for="formGroupExampleInput">Register number</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput" required="required">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Address</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" required="required" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Date of birth</label>
+                              <input type="date" class="form-control" id="exampleInputPassword1" required="required">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Phone number</label>
+                              <input type="number" class="form-control" id="exampleInputPassword1" required="required">
+                            </div> 
                           </div>
                           
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                          <div class="form-right">
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Whatsapp number</label>
+                              <input type="number" class="form-control" id="exampleInputPassword1" required="required">
+                            </div>
+                            <div class="form-group">
+                              <label for="inputGroupSelect02">Year</label>
+                              <select class="form-select" id="inputGroupSelect02" required="required">
+                                <option selected>Choose...</option>
+                                <option value="1">1st Year</option>
+                                <option value="2">2nd Year</option>
+                                <option value="3">3rd Year</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputGroupSelect02">Text book</label>
+                              <select class="form-select" id="inputGroupSelect02" required="required">
+                                <option selected>Not received</option>
+                                <option value="1">Received</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputGroupSelect02">Certificate</label>
+                              <select class="form-select" id="inputGroupSelect02" required="required">
+                                <option selected>Not received</option>
+                                <option value="1">Received</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputGroupSelect02">Exam</label>
+                              <select class="form-select" id="inputGroupSelect02" required="required">
+                                <option selected>Not Attented</option>
+                                <option value="1">Attented</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputGroupSelect02">Have we contacted you ?</label>
+                              <select class="form-select" id="inputGroupSelect02" required="required">
+                                <option selected>No</option>
+                                <option value="1">Yes</option>
+                              </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                        </div>
                       </form>
                 </div>
             </div>
